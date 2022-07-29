@@ -12,7 +12,7 @@ function play(question, answer)
   {
     var userAnswer = readlineSync.question(question);
 
-      if(userAnswer === answer)
+      if(userAnswer.toUpperCase() === answer.toUpperCase())
       {
         console.log(chalk.greenBright("\nYou answered it Correct.."));
         score++;
